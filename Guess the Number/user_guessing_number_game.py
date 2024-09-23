@@ -1,5 +1,5 @@
 import random
-
+ 
 # The computer selects a random number between 1 and 100
 secret_number = random.randint(1, 100)
 attempts = 0
