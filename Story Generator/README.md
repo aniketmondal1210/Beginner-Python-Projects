@@ -1,8 +1,8 @@
-## 3. Acronym Creator
+## 5. Random Story Generator
 
-The Acronym Creator generates an acronym from a given phrase.
+The Random Story Generator creates a unique story each time it runs.
 
 ### Key Features:
 
-- Accepts a string input and produces an acronym.
-- Allows users to create multiple acronyms in one session.
+- Combines random elements to generate engaging stories.
+- Provides the option to create multiple stories in one session.
