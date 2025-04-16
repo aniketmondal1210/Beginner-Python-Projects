@@ -7,22 +7,22 @@
 # The key parameter is an optional argument that allows us to customize the sort order.
 
  ```plaintext
-# a = [
-#     {"name": "Alice", "age": 32},
-#     {"name": "Bob", "age": 42},
-#     {"name": "Eve", "age": 22}
-# ]
-# # Use sorted() to sort the list 'a' based on the 'age' key
-# # sorted() returns a new list with dictionaries sorted by the 'age'
-# b = sorted(a, key=lambda x: x['age'])
-# print(b)
-# # Output:
-# # [{'name': 'Eve', 'age': 22}, {'name': 'Alice', 'age': 32}, {'name': 'Bob', 'age': 42}]
-# ```
+a = [
+    {"name": "Alice", "age": 32},
+    {"name": "Bob", "age": 42},
+    {"name": "Eve", "age": 22}
+]
+Use sorted() to sort the list 'a' based on the 'age' key
+sorted() returns a new list with dictionaries sorted by the 'age'
+b = sorted(a, key=lambda x: x['age'])
+print(b)
+```
+```plaintext
+Output:
+[{'name': 'Eve', 'age': 22}, {'name': 'Alice', 'age': 32}, {'name': 'Bob', 'age': 42}]
+```
 
-# Explanation: `key=lambda x: x['age']` specifies that the sorting should be done using the ‘age’ value from each dictionary
-
----
+Explanation: `key=lambda x: x['age']` specifies that the sorting should be done using the ‘age’ value from each dictionary
 ```
 # Task
 
