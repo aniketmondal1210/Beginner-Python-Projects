@@ -23,7 +23,6 @@ Output:
 ```
 
 Explanation: `key=lambda x: x['age']` specifies that the sorting should be done using the ‘age’ value from each dictionary
-```
 # Task
 
 # Complete the `sort_data()` function to meet the following requirements:
@@ -81,3 +80,4 @@ Bob  30  IT  60000
 Qais  31  IT  62000  
 Umar  36  Finance  72000  
 Anuj  40  IT  80000  
+```
