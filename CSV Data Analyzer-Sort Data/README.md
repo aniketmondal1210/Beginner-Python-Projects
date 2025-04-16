@@ -6,7 +6,7 @@
 
 # The key parameter is an optional argument that allows us to customize the sort order.
 
-# ```python
+ ```plaintext
 # a = [
 #     {"name": "Alice", "age": 32},
 #     {"name": "Bob", "age": 42},
@@ -23,7 +23,7 @@
 # Explanation: `key=lambda x: x['age']` specifies that the sorting should be done using the ‘age’ value from each dictionary
 
 ---
-
+```
 # Task
 
 # Complete the `sort_data()` function to meet the following requirements:
