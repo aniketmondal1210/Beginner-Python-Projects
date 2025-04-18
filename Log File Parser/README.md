@@ -1,53 +1,65 @@
-# Student Records - Menu-Driven Program
+# Log File Parser - Flow
 
 ## Overview
-This task involves implementing a menu-based student record management system. Users can perform various actions including viewing, searching, filtering, adding, and deleting student records. The program will keep running until the user chooses to exit.
+This task involves creating a menu-driven **Log File Parser** program that allows users to generate and analyze logs in various ways. The program supports generating new logs, viewing, filtering, searching, and displaying log statistics.
 
-## Functional Requirements
+## Functional Flow
 
 ### 1. Accept User Input
-Prompt the user to choose an action from the following options:
-- **View students**
-- **Search**
-- **Filter**
-- **Add**
-- **Delete**
+Prompt the user to choose an action:
+- **Generate a log**
+- **View logs**
+- **Filter logs**
+- **Search logs**
+- **View log statistics**
 - **Exit**
 
-### 2. View Students
-- Load and display all student records from the storage (e.g., a file or in-memory structure).
+### 2. Generate a Log
+- Randomly generate a log entry with:
+  - A current timestamp
+  - A log level (INFO, WARNING, ERROR)
+  - A message
+- Append the generated log to the log file.
+- Display a confirmation message.
 
-### 3. Search for a Student
-- Prompt the user to input a student ID.
-- Display the student record if found.
-- If no matching student is found, show an error message.
+### 3. View All Logs
+- Open and read all log entries from the log file.
+- Display the entries in the console.
+- If no logs exist, display a message like: `"Log file is empty."`
 
-### 4. Filter Students
-- Ask the user to filter by either **CGPA** or **Age**.
-- Ask for the condition (e.g., `>`, `<`, `=`) and the value.
-- Display the list of students matching the condition.
+### 4. Filter Logs by Level
+- Prompt the user for a log level: `INFO`, `WARNING`, or `ERROR`.
+- Read the file and display only the logs that match the selected level.
+- If no matching logs are found, show an appropriate message.
 
-### 5. Delete a Student
-- Prompt for the student ID.
-- Remove the corresponding student record if found.
-- Save the updated student records.
+### 5. Search Logs by Keyword
+- Prompt the user for a keyword.
+- Read the log file and search for log lines containing the keyword.
+- Display matching logs.
+- If no matches are found, display a message indicating so.
 
-### 6. Exit
-- Exit the program cleanly.
+### 6. View Log Statistics
+- Read the entire log file.
+- Count the number of logs for each level:
+  - `INFO`
+  - `WARNING`
+  - `ERROR`
+- Display total logs and the count for each level.
+- If the file is empty, show an appropriate message.
 
-### 7. Continuous Execution
-- The menu and prompt will repeat until the user selects **Exit**.
+### 7. Exit
+- Gracefully terminate the program.
+
+### 8. Continuous Execution
+- The program should display the menu repeatedly and execute the selected functionality until the user chooses to **Exit**.
 
 ## Example Menu Prompt
 ```
 Choose an action:
-1. View Students
-2. Search
-3. Filter
-4. Add
-5. Delete
+1. Generate a Log
+2. View Logs
+3. Filter Logs by Level
+4. Search Logs by Keyword
+5. View Log Statistics
 6. Exit
-Enter choice: 
-```
-
-Make sure to handle invalid choices and provide user-friendly messages throughout the interaction.
+Enter your choice:
