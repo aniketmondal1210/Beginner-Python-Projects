@@ -1,43 +1,53 @@
-# Log Statistics Functionality
+# Student Records - Menu-Driven Program
 
 ## Overview
-Now that keyword-based log searching is in place, we will implement **Log Statistics** to provide users with a summary of the log file.
+This task involves implementing a menu-based student record management system. Users can perform various actions including viewing, searching, filtering, adding, and deleting student records. The program will keep running until the user chooses to exit.
 
-### Purpose
-The `log_statistics()` function will analyze a log file and present:
-- The **total number of log entries**.
-- The **count of each log level** (INFO, WARNING, ERROR).
-- The **most recent log entry** based on appearance in the file.
+## Functional Requirements
 
-## Task Requirements
-Update the `log_statistics()` function to:
+### 1. Accept User Input
+Prompt the user to choose an action from the following options:
+- **View students**
+- **Search**
+- **Filter**
+- **Add**
+- **Delete**
+- **Exit**
 
-1. **Read all log entries from the log file.**
-2. If no logs exist:
-   - Output: `"No logs found to analyze."`
-3. Otherwise, display:
-   - Total number of logs.
-   - Count of logs at each level (`INFO`, `WARNING`, `ERROR`).
-   - Most recent log entry.
+### 2. View Students
+- Load and display all student records from the storage (e.g., a file or in-memory structure).
 
-## Expected Output Example
+### 3. Search for a Student
+- Prompt the user to input a student ID.
+- Display the student record if found.
+- If no matching student is found, show an error message.
+
+### 4. Filter Students
+- Ask the user to filter by either **CGPA** or **Age**.
+- Ask for the condition (e.g., `>`, `<`, `=`) and the value.
+- Display the list of students matching the condition.
+
+### 5. Delete a Student
+- Prompt for the student ID.
+- Remove the corresponding student record if found.
+- Save the updated student records.
+
+### 6. Exit
+- Exit the program cleanly.
+
+### 7. Continuous Execution
+- The menu and prompt will repeat until the user selects **Exit**.
+
+## Example Menu Prompt
 ```
-Choose an option: 5
-
---- Log Statistics ---
-Total logs: 15
-INFO logs: 7
-WARNING logs: 5
-ERROR logs: 3
-Most recent log: 2025-03-31 10:45:12 [WARNING] Low disk space
+Choose an action:
+1. View Students
+2. Search
+3. Filter
+4. Add
+5. Delete
+6. Exit
+Enter choice: 
 ```
 
-## Notes
-- Assume that logs are stored line-by-line in a text file.
-- Each log line follows a format such as:
-  ```
-  2025-03-31 10:45:12 [WARNING] Low disk space
-  ```
-- The most recent log is the last line in the log file.
-
-Ensure that the `log_statistics()` function reflects these behaviors accurately.
+Make sure to handle invalid choices and provide user-friendly messages throughout the interaction.
