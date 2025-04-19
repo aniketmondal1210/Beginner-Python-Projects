@@ -21,11 +21,11 @@ Welcome to Calculator
 
 Choose one operation:
 
-- 1. Add
+- Add
 
-- 2. Subtract
+- Subtract
 
-- 3. Exit
+- Exit
 
 ### 2. Get User Choice
 
@@ -68,11 +68,11 @@ Welcome to Calculator
 
 Choose one operation:
 
-- 1. Add
+- Add
 
-- 2. Subtract
+- Subtract
 
-- 3. Exit
+- Exit
 
 Select the operation: 1 Give two numbers on two lines Number 1 is: 10 Number 2 is: 5 The sum is: 15
 
