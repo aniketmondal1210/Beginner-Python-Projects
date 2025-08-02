@@ -10,7 +10,7 @@ def ring_bell():
     playsound.playsound('doorbell.mp3')
 
 while True:
-    _ , frame = cap.read()
+    ret , frame = cap.read()
     faces = face_recognition.face_locations(frame)
     if faces and not sound_played:
         threading.Thread(target=ring_bell).start()
