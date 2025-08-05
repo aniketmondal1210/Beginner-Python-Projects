@@ -29,31 +29,10 @@ This is a simple **Digital Clock** GUI application built using **Python's Tkinte
 python digital_clock.py
 ```
 
-## 🧾 Code Overview
-
-```python
-import tkinter as tk
-from time import strftime
-
-root = tk.Tk()
-root.title("Digital Clock")
-
-def time():
-    string = strftime('%H:%M:%S %p \n %D')
-    label.config(text=string)
-    label.after(1000, time)
-
-label = tk.Label(root, font=('calibri', 50, 'bold'), background='white', foreground='black')
-label.pack(anchor='center')
-
-time()
-root.mainloop()
-```
-
 ## 📦 License
 
 This project is licensed under the MIT License.
 
 ## 👤 Author
 
-- [Your Name](https://github.com/yourusername)
+- [Aniket Mondal](https://github.com/aniketmondal1210)
