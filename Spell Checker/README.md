@@ -19,7 +19,7 @@ Make sure you have Python installed, then install the `pyspellchecker` library:
 ```bash
 pip install pyspellchecker
 ```
-🚀 How to Run
+## 🚀 How to Run
 
     Save the Python code in a file, for example spell_checker.py.
 
@@ -31,7 +31,7 @@ pip install pyspellchecker
 python spell_checker.py
 ```
 
-💻 Example Usage
+## 💻 Example Usage
 
 Enter text to check (or 'q' to quit): Ths is a smple progrm
 
@@ -41,7 +41,7 @@ Correcting "progrm" to "program"
 Original text: Ths is a smple progrm
 Corrected text: This is a simple program
 
-📜 How It Works
+## 📜 How It Works
 
     The program splits the entered text into words.
 
@@ -51,7 +51,7 @@ Corrected text: This is a simple program
 
     It displays both the original and corrected text.
 
-🛠 Future Improvements
+## 🛠 Future Improvements
 
     Handle punctuation properly.
 
@@ -59,7 +59,7 @@ Corrected text: This is a simple program
 
     Suggest multiple possible corrections.
 
-📄 License
+## 📄 License
 
 This project is free to use and modify for learning purposes.
 
